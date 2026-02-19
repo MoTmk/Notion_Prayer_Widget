@@ -10,23 +10,25 @@
     margin: 0;
     padding: 0;
     background: transparent;
-    overflow: hidden; /* يمنع أي Scroll */
+    overflow: hidden;
   }
 
   body {
-    text-align: center; /* سنترة أفقية */
+    text-align: center;
     background-color: #191919;
   }
+
   .nv-widget {
     width: 160px;
     height: 160px;
   }
+
   .wrapper {
     display: inline-block;
-    overflow: hidden; /* يقص أي زيادة */
+    overflow: hidden;
+    filter: invert(1) hue-rotate(180deg);
   }
 
-  /* يخفي أي Scrollbar داخلي */
   ::-webkit-scrollbar {
     display: none;
   }
