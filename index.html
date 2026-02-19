@@ -6,18 +6,25 @@
 <title>Prayer Widget</title>
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
+
   html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow: hidden;
+    height: 100%;
     background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  .wrapper {
+  body {
+    display: flex;
+    justify-content: center;   /* سنتر أفقي */
+    align-items: center;       /* سنتر رأسي */
+  }
+
+  .widget-container {
     width: fit-content;
   }
 </style>
@@ -27,7 +34,7 @@ src="https://namaz.io/widget.js"></script>
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="widget-container">
     <div class="nv-widget"
       data-lang="en"
       data-search="disabled"
