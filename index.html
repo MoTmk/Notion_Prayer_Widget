@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prayer Widget</title>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: fit-content;
+  }
+</style>
+
+<script async defer crossorigin="anonymous"
+src="https://namaz.io/widget.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="nv-widget"
+      data-lang="en"
+      data-search="disabled"
+      data-cityId="4232"
+      data-countdown="true"
+      data-prayerTimes="row"
+      data-width="170">
+    </div>
+  </div>
+</body>
+</html>
