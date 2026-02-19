@@ -9,17 +9,22 @@
   html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
     background: transparent;
+    overflow: hidden; /* يمنع أي Scroll */
   }
 
-  .outer {
-    width: 100%;
+  body {
     text-align: center; /* سنترة أفقية */
   }
 
-  .inner {
-    display: inline-block; /* يخلي العرض على قد المحتوى */
+  .wrapper {
+    display: inline-block;
+    overflow: hidden; /* يقص أي زيادة */
+  }
+
+  /* يخفي أي Scrollbar داخلي */
+  ::-webkit-scrollbar {
+    display: none;
   }
 </style>
 
@@ -28,16 +33,14 @@ src="https://namaz.io/widget.js"></script>
 </head>
 
 <body>
-  <div class="outer">
-    <div class="inner">
-      <div class="nv-widget"
-        data-lang="en"
-        data-search="disabled"
-        data-cityId="4232"
-        data-countdown="true"
-        data-prayerTimes="row"
-        data-width="170">
-      </div>
+  <div class="wrapper">
+    <div class="nv-widget"
+      data-lang="en"
+      data-search="disabled"
+      data-cityId="4232"
+      data-countdown="true"
+      data-prayerTimes="row"
+      data-width="160">
     </div>
   </div>
 </body>
